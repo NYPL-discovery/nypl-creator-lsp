@@ -1,16 +1,18 @@
 # NYPL Digital Collections Search app
 
-This repo sets up a skeleton Nextjs application with NYPL-related npm packages:
+This repo sets up a skeleton [Nextjs](https://nextjs.org/) application with NYPL-related npm packages:
 
 * NYPL Design System
-  * Storybook - https://nypl.github.io/nypl-design-system/storybook-static/?path=/story/introduction--page
-  * Github repo - https://github.com/NYPL/nypl-design-system#readme
+  * [Storybook](https://nypl.github.io/nypl-design-system/storybook-static/?path=/story/introduction--page)
+  * [Github repo](https://github.com/NYPL/nypl-design-system#readme)
 * NYPL Header
+  * No need to modify
 * NYPL Footer
+  * No need to modify
 
 ## NYPL Digital Collections API
 
-Sign up for an API token and read documentation here http://api.repo.nypl.org/.
+Sign up for an API token and read documentation here http://api.repo.nypl.org/. Create an `.env.local` file in the root directory to store your API token as an environment variable. Check `.env.example` for the environment variable name.
 
 ## Back-end
 
@@ -21,3 +23,7 @@ In `pages/api/collections.tsx`, there is a skeleton function that sets up an API
 After calling the backend to get items from the NYPL Digital Collections API, it is time to display them.
 
 The main entry file is `pages/index.tsx` but components can be organized in `src/`.
+
+## Running the App
+
+Make sure the app runs locally in development mode with `npm run dev` or `yarn dev`, as well as in production mode with `npm run build` and `npm start`, or `yarn build` and `yarn start`.
