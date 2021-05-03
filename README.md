@@ -12,17 +12,17 @@ This repo sets up a skeleton [Nextjs](https://nextjs.org/) application with NYPL
 
 ## NYPL Digital Collections API
 
-Sign up for an API token and read documentation here http://api.repo.nypl.org/. Create an `.env.local` file in the root directory to store your API token as an environment variable. Check `.env.example` for the environment variable name.
+Sign up for an API token and read documentation here http://api.repo.nypl.org/. Create an `.env.local` file in the root directory to store your API token as an environment variable named `API_REPO_TOKEN`. Check `.env.example` for an example.
 
 ## Back-end
 
-In `pages/api/collections.tsx`, there is a skeleton function that sets up an API call to the NYPL Digital Collections API.
+In `pages/api/collections.tsx`, there is a function that sets up an API call to the NYPL Digital Collections API. This returns an array of item results based on a search query. The client can make a `POST` request to this server function through the `/api/collections` endpoint.
 
 ## Front-end
 
 After calling the backend to get items from the NYPL Digital Collections API, it is time to display them.
 
-The main entry file is `pages/index.tsx` but components can be organized in `src/`.
+The main entry file is `pages/index.tsx` but components can be organized in `src/` or wherever makes sense.
 
 ## Running the App
 
