@@ -2,6 +2,7 @@ import Head from "next/head";
 import axios from "axios";
 import { Header, navConfig } from "@nypl/dgx-header-component";
 import Footer from "@nypl/dgx-react-footer";
+import SampleComponent from "../src/SampleComponent";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
       />
 
       {/* Your component(s) here */}
-
+      <SampleComponent></SampleComponent>
       {/* This will render the NYPL Footer. */}
       <Footer />
     </div>
