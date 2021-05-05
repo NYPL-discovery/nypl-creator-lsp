@@ -22,7 +22,8 @@ const Home = () => {
       />
 
       {/* Your component(s) here */}
-      <SampleComponent></SampleComponent>
+      <SampleComponent />
+      
       {/* This will render the NYPL Footer. */}
       <Footer />
     </div>
