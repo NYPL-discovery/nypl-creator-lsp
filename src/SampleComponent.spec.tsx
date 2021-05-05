@@ -1,9 +1,11 @@
+// This uses mocha, chai, and enzyme.
+
 import React from "react";
 import { mount } from "enzyme";
 import { expect } from "chai";
 import SampleComponent from "./SampleComponent";
 
-describe("Testin <SampleComponent/>", () => {
+describe("SampleComponent", () => {
    it("renders an h2 and hello world", () => {
       const wrapper = mount(<SampleComponent />);
 
