@@ -26,4 +26,34 @@ The main entry file is `pages/index.tsx` but components can be organized in `src
 
 ## Running the App
 
+Prerequisites: `node` (v10 minimum) and `npm` (v6 minimum) or `yarn` (v1.20 minimum)
+[Instructions to install node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+Install the app using `npm install` or `yarn install`
+
 Make sure the app runs locally in development mode with `npm run dev` or `yarn dev`, as well as in production mode with `npm run build` and `npm start`, or `yarn build` and `yarn start`.
+
+## Unit Testing
+
+While we don't expect a complete suite of unit tests given the time limit, we do expect a minimal set of basic tests for your application. While the setup for the following two test runners is opinionated, you only need to worry about writing the tests and not make configuration to get `jest` or `mocha` to run.
+
+We provide both `jest` and `mocha` as test runners in this application and you can choose either to write unit tests in. If you prefer something else, please install, configure, and use it.
+
+### Jest/React Testing Library
+
+If you want to write React tests with React Testing Library, please edit `/src/SampleComponent.test.tsx`. If you add more files, that's okay but end it in `.test.tsx` for jest to pick it up.
+
+To run unit tests with `jest` and `react-testing-library`, in the command line run:
+
+```sh
+$ npm run test:jest
+```
+### Mocha/Enzyme
+
+If you want to write React tests with Enzyme, please edit `/src/SampleComponent.spec.tsx`. If you add more files, that's okay but end it in `.spec.tsx` for mocha to pick it up.
+
+To run unit tests with `mocha` and `enzyme`, in the command line run:
+
+```sh
+$ npm run test:mocha
+```
