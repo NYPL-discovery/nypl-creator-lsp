@@ -1,12 +1,10 @@
 import Head from "next/head";
-import axios from "axios";
-import { Header, navConfig } from "@nypl/dgx-header-component";
 import Footer from "@nypl/dgx-react-footer";
 import SampleComponent from "../src/SampleComponent";
 
 const Home = () => {
   return (
-    <div >
+    <div>
       {/* Add any <head> related elements here. */}
       <Head>
         <title>NYPL</title>
@@ -15,11 +13,10 @@ const Home = () => {
       </Head>
 
       {/* This will render the NYPL Header. Make sure there is an element
-      with a class name of "main-content" for the skip navigation.*/}
-      <Header
-        skipNav={{ target: "main-content" }}
-        navData={navConfig.current}
-      />
+      with a class name of "mainContent" for the skip navigation. */}
+      <div id="Header-Placeholder" style={{ "minHeight": "230px" }}>
+          <script type="text/javascript" src="https://header.nypl.org/dgx-header.min.js?skipNav=mainContent" async></script>
+      </div>
 
       {/* Your component(s) here */}
       <SampleComponent />

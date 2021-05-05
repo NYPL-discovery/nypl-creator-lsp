@@ -6,25 +6,37 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "test:jest": "./node_modules/.bin/jest",
+    "test:mocha": "env TS_NODE_COMPILER_OPTIONS='{\"jsx\": \"react\" }' ./node_modules/.bin/mocha -r ts-node/register -r @babel/register -r testHelper/mocha.ts src/**/*.spec.tsx --recursive --timeout 5000"
   },
   "dependencies": {
     "@nypl/design-system-react-components": "^0.21.2",
-    "@nypl/dgx-header-component": "git+https://git@github.com/NYPL/dgx-header-component#reactupdate",
     "@nypl/dgx-react-footer": "0.5.7",
+    "@types/enzyme": "^3.10.8",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "axios": "0.21.1",
     "next": "10.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "sass": "^1.26.9",
-    "swr": "^0.5.6"
+    "sass": "^1.26.9"
   },
   "devDependencies": {
+    "@babel/register": "^7.13.16",
+    "@testing-library/jest-dom": "5.11.9",
+    "@testing-library/react": "11.2.3",
+    "@testing-library/react-hooks": "5.0.3",
+    "@types/chai": "^4.2.17",
     "@types/jest": "^26.0.20",
+    "@types/mocha": "^8.2.2",
     "@types/node": "^15.0.1",
     "@types/react": "^16.9.41",
     "babel-jest": "^25.2.6",
+    "chai": "^4.3.4",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "jest": "26.6.3",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
   }
 }

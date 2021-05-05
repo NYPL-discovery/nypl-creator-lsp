@@ -1,3 +1,4 @@
+import '@testing-library/jest-dom/extend-expect';
 const { JSDOM } = require("jsdom");
 
 const jsdom = new JSDOM("<!doctype html><html><body></body></html>", {
@@ -17,6 +18,6 @@ Object.keys(document.defaultView).forEach((property) => {
 
 global["navigator"] = {
   userAgent: "node.js",
-} as Navigator;
+};
 
 export {};
