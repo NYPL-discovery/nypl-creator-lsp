@@ -26,7 +26,7 @@ The main entry file is `pages/index.tsx` but components can be organized in `src
 
 ## Running the App
 
-Prerequisites: `npm (version?)` or `yarn (version?)` and `node (version?)`  
+Prerequisites: `node` (v10 minimum) and `npm` (v6 minimum) or `yarn` (v1.20 minimum)
 [Instructions to install node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 Install the app using `npm install` or `yarn install`
