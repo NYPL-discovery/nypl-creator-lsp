@@ -35,9 +35,9 @@ Make sure the app runs locally in development mode with `npm run dev` or `yarn d
 
 ## Unit Testing
 
-While we don't expect a complete suite of unit tests given the time limit, we do expect a minimal set of basic tests for your application. While the setup for the following two test runners is opinionated, you only need to worry about writing the tests and not make configuration to get `jest` or `mocha` to run.
+We don't expect you to fully code a test suite in the given time limit, but it is important for us to see that you have put some thought into testing. Please describe (e.g. in comments) what a complete test suite would include and how it would be organized.
 
-We provide both `jest` and `mocha` as test runners in this application and you can choose either to write unit tests in. If you prefer something else, please install, configure, and use it.
+We provide both `jest` and `mocha` as test runners in this application if you want to use either one. If you prefer something else, please explain your choice.
 
 ### Jest/React Testing Library
 
