@@ -37,7 +37,7 @@ Make sure the app runs locally in development mode with `npm run dev` or `yarn d
 
 We don't expect you to fully code a test suite in the given time limit, but it is important for us to see that you have put some thought into testing. Please describe (e.g. in comments) what a complete test suite would include and how it would be organized.
 
-We provide both `jest` and `mocha` as test runners in this application if you want to use either one. If you prefer something else, please explain your choice.
+In case you do want to code your tests, we provide both `jest` and `mocha` as test runners in this application if you want to use either one. If you prefer something else, please explain your choice.
 
 ### Jest/React Testing Library
 
